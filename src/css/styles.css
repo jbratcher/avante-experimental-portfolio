@@ -1,0 +1,68 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  background: #570000;
+  color: #eee;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.5s ease-in-out; }
+  section:hover {
+    filter: hue-rotate(30deg); }
+  section h1, section h2 {
+    font-weight: 100; }
+  section h1, section h2, section p {
+    text-shadow: 0 0.125rem 0 black; }
+  section p {
+    font-family: 'Markazi Text', serif; }
+
+header, main {
+  display: grid;
+  grid-template-columns: repeat(1fr, 6);
+  grid-auto-columns: minmax(0, 50vw);
+  grid-auto-rows: minmax(25vh, auto); }
+
+header {
+  grid-template-areas: 'brand brand brand about about about' 'brand brand brand services services services'; }
+
+main {
+  grid-template-areas: 'work work work contact contact contact' 'blog blog blog contact contact contact'; }
+
+#brand {
+  background: #570000;
+  grid-area: brand; }
+
+#about {
+  background: #A18276;
+  grid-area: about; }
+
+#services {
+  background: #D8C99B;
+  grid-area: services; }
+
+#work {
+  background: #A18276;
+  grid-area: work; }
+
+#blog {
+  background: #D8C99B;
+  grid-area: blog; }
+
+#contact {
+  background: #B10F2E;
+  grid-area: contact; }
+
+@media (min-width: 768px) {
+  h1, h2 {
+    font-size: 3rem; }
+  p {
+    font-size: 1.75rem; } }
