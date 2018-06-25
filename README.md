@@ -1,6 +1,4 @@
-# Gulp Live Reload Dev Environment
-
-Avante - An experimental portfolio theme
+# Avante - An experimental portfolio theme
 
 Avante takes a minimalist, flat design approach to the modern portfolio site.
 
