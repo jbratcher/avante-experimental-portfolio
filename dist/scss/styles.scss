@@ -41,87 +41,115 @@ section {
 
 header, main {
   display: grid;
-  grid-template-columns: repeat(1fr, 6);
+  grid-template-columns: repeat(1fr, 8);
   grid-auto-columns: minmax(0, 50vw);
   grid-auto-rows: minmax(25vh, auto);
 }
 
 header {
-  grid-template-areas: 'brand brand brand about about about'
-                       'brand brand brand services services services'
+  grid-template-areas: 'brand brand brand brand services services about about'
+                       'brand brand brand brand services services about about'
                        ;
 }
 
 main {
-  grid-template-areas: 'work work work contact contact contact'
-                       'blog blog blog contact contact contact'
+  grid-template-areas: 'work work work work contact contact contact contact'
+                       'blog blog blog blog contact contact contact contact'
                        ;
 }
 
 #brand {
-  background: #570000;
-  // background: linear-gradient(to bottom right, #5B86E5, #36D1DC);
+  background: #570000 no-repeat center center;
   grid-area: brand;
+  transition: all 0.5s ease-in-out;
 
   &:hover {
     background: url("https://placeimg.com/800/800/tech?t=1529975598590") no-repeat center center;
-    background-size: cover;
-    
+  
+    i.fas {
+      opacity: 0;
+    }
+
   }
   
 }
 
 #about {
-  background: #A18276;
-  // background: linear-gradient(to bottom, #000046, #1CB5E0);
+  background: #A18276 no-repeat center center;
   grid-area: about;
+  transition: all 0.5s ease-in-out;
   
   &:hover {
     background: url("https://placeimg.com/800/800/people?t=1529974849194") no-repeat center;
+    
+    i.fas {
+      opacity: 0;
+    }
+    
   }
   
 }
 
 #services {
-  background: #D8C99B;
-  // background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  background: #D8C99B no-repeat center center;
   grid-area: services;
+  transition: all 0.5s ease-in-out;
   
   &:hover {
     background: url("https://placeimg.com/800/800/arch?t=1529975931529") no-repeat center;
+    
+    i.fas {
+      opacity: 0;
+    }
+    
   }
   
 }
 
 #work {
-  background: #A18276;
-  // background: linear-gradient(to top, #007991, #78ffd6);
+  background: #A18276 no-repeat center center;
   grid-area: work;
+  transition: all 0.5s ease-in-out;
   
   &:hover {
     background: url("https://placeimg.com/800/800/arch?t=1529975718886") no-repeat center;
+    
+    i.fas {
+      opacity: 0;
+    }
+    
   }
   
 }
 
 #blog {
-  background: #D8C99B;
-  // background: linear-gradient(to top, #4AC29A, #BDFFF3);
+  background: #D8C99B no-repeat center center;
   grid-area: blog;
+  transition: all 0.5s ease-in-out;
   
   &:hover {
     background: url("https://placeimg.com/800/800/arch?t=1529975832206") no-repeat center;
+    
+    i.fas {
+      opacity: 0;
+    }
+    
   }
   
 }
 
 #contact {
-  background: #B10F2E;
-  // background: linear-gradient(to bottom right, #159957, #155799);
+  background: #B10F2E no-repeat center center;
   grid-area: contact;
+  transition: all 0.5s ease-in-out;
   
   &:hover {
     background: url("https://placeimg.com/800/800/tech?t=1529975890628") no-repeat center;
+    
+    i.fas {
+      opacity: 0;
+    }
+    
   }
   
 }
