@@ -18,12 +18,6 @@ section {
   transition: filter 0.5s ease-in-out; }
   section:hover {
     filter: hue-rotate(30deg); }
-  section h1, section h2 {
-    font-weight: 100; }
-  section h1, section h2, section p {
-    text-shadow: 0 0.125rem 0 black; }
-  section p {
-    font-family: 'Markazi Text', serif; }
 
 header, main {
   display: grid;
