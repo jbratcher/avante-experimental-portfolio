@@ -62,36 +62,68 @@ main {
   background: #570000;
   // background: linear-gradient(to bottom right, #5B86E5, #36D1DC);
   grid-area: brand;
+
+  &:hover {
+    background: url("https://placeimg.com/800/800/tech?t=1529975598590") no-repeat center center;
+    background-size: cover;
+    
+  }
+  
 }
 
 #about {
   background: #A18276;
   // background: linear-gradient(to bottom, #000046, #1CB5E0);
   grid-area: about;
+  
+  &:hover {
+    background: url("https://placeimg.com/800/800/people?t=1529974849194") no-repeat center;
+  }
+  
 }
 
 #services {
   background: #D8C99B;
   // background: linear-gradient(to bottom, #2F80ED, #56CCF2);
   grid-area: services;
+  
+  &:hover {
+    background: url("https://placeimg.com/800/800/arch?t=1529975931529") no-repeat center;
+  }
+  
 }
 
 #work {
   background: #A18276;
   // background: linear-gradient(to top, #007991, #78ffd6);
   grid-area: work;
+  
+  &:hover {
+    background: url("https://placeimg.com/800/800/arch?t=1529975718886") no-repeat center;
+  }
+  
 }
 
 #blog {
   background: #D8C99B;
   // background: linear-gradient(to top, #4AC29A, #BDFFF3);
   grid-area: blog;
+  
+  &:hover {
+    background: url("https://placeimg.com/800/800/arch?t=1529975832206") no-repeat center;
+  }
+  
 }
 
 #contact {
   background: #B10F2E;
   // background: linear-gradient(to bottom right, #159957, #155799);
   grid-area: contact;
+  
+  &:hover {
+    background: url("https://placeimg.com/800/800/tech?t=1529975890628") no-repeat center;
+  }
+  
 }
 
 
