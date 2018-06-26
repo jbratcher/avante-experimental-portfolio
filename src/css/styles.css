@@ -32,10 +32,10 @@ header, main {
   grid-auto-rows: minmax(25vh, auto); }
 
 header {
-  grid-template-areas: 'brand brand brand brand services services about about' 'brand brand brand brand services services about about'; }
+  grid-template-areas: 'brand brand brand brand services services about about' 'brand brand brand brand services services about about'; }
 
 main {
-  grid-template-areas: 'work work work work contact contact contact contact' 'blog blog blog blog contact contact contact contact'; }
+  grid-template-areas: 'work work work work contact contact contact contact' 'blog blog blog blog contact contact contact contact'; }
 
 #brand {
   background: #570000 no-repeat center center;

@@ -2,6 +2,8 @@
 
 Avante takes a minimalist, flat design approach to the modern portfolio site.
 
+[Demo](https://jbratcher.github.io/avante-experimental-portfolio/)
+
 ### Version
 
 0.0.3
@@ -9,7 +11,7 @@ Avante takes a minimalist, flat design approach to the modern portfolio site.
 ## Install Dependencies
 
 ```bash
-npm install 
+npm install
 ```
 
 ## Compile Sass & Run Dev Server
@@ -42,7 +44,7 @@ gulp build
 gulp clean:dist
 ```
 
-## Features: 
+## Features:
 
 
 ## Future Features:

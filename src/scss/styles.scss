@@ -18,19 +18,19 @@ section {
   align-items: center;
   justify-content: center;
   transition: filter 0.5s ease-in-out;
-  
+
   &:hover {
     filter: hue-rotate(30deg);
-    
+
   }
-  
+
   h1, h2 {
     font-weight: 100;
   }
-  
+
   h1, h2, p {
     text-shadow: 0 0.125rem 0 rgba(0,0,0,1);
-    
+
   }
 
   p {
@@ -65,106 +65,106 @@ main {
 
   &:hover {
     background: url("https://placeimg.com/800/800/tech?t=1529975598590") no-repeat center center;
-  
+
     i.fas {
       opacity: 0;
     }
 
   }
-  
+
 }
 
 #about {
   background: #A18276 no-repeat center center;
   grid-area: about;
   transition: all 0.5s ease-in-out;
-  
+
   &:hover {
     background: url("https://placeimg.com/800/800/people?t=1529974849194") no-repeat center;
-    
+
     i.fas {
       opacity: 0;
     }
-    
+
   }
-  
+
 }
 
 #services {
   background: #D8C99B no-repeat center center;
   grid-area: services;
   transition: all 0.5s ease-in-out;
-  
+
   &:hover {
     background: url("https://placeimg.com/800/800/arch?t=1529975931529") no-repeat center;
-    
+
     i.fas {
       opacity: 0;
     }
-    
+
   }
-  
+
 }
 
 #work {
   background: #A18276 no-repeat center center;
   grid-area: work;
   transition: all 0.5s ease-in-out;
-  
+
   &:hover {
     background: url("https://placeimg.com/800/800/arch?t=1529975718886") no-repeat center;
-    
+
     i.fas {
       opacity: 0;
     }
-    
+
   }
-  
+
 }
 
 #blog {
   background: #D8C99B no-repeat center center;
   grid-area: blog;
   transition: all 0.5s ease-in-out;
-  
+
   &:hover {
     background: url("https://placeimg.com/800/800/arch?t=1529975832206") no-repeat center;
-    
+
     i.fas {
       opacity: 0;
     }
-    
+
   }
-  
+
 }
 
 #contact {
   background: #B10F2E no-repeat center center;
   grid-area: contact;
   transition: all 0.5s ease-in-out;
-  
+
   &:hover {
     background: url("https://placeimg.com/800/800/tech?t=1529975890628") no-repeat center;
-    
+
     i.fas {
       opacity: 0;
     }
-    
+
   }
-  
+
 }
 
 
 // Media Queries
 
 @media (min-width: 768px) {
-  
+
   h1, h2 {
     font-size: 3rem;
   }
-  
+
   p {
     font-size: 1.75rem;
   }
-  
+
 }
