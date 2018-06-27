@@ -25,10 +25,8 @@ section {
     width: 100%; }
   section:hover {
     filter: hue-rotate(30deg); }
-    section:hover i.fas {
-      opacity: 0; }
     section:hover img {
-      opacity: 1; }
+      opacity: 0.5; }
 
 header, main {
   display: grid;
@@ -43,7 +41,7 @@ main {
   grid-template-areas: 'work work work work blog blog blog blog' 'contact contact contact contact contact contact contact contact'; }
 
 #brand {
-  background: #570000;
+  background: #B10F2E;
   grid-area: brand; }
 
 #about {
@@ -63,7 +61,7 @@ main {
   grid-area: blog; }
 
 #contact {
-  background: #B10F2E;
+  background: #5C7457;
   grid-area: contact; }
 
 @media (min-width: 768px) {
