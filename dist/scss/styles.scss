@@ -34,8 +34,18 @@ section {
     img {
       opacity: 0.5;
     }
+    
+    .text-reveal {
+      opacity: 1;
+      top: 1rem;
+    }
 
   }
+
+}
+
+p {
+  font-family: 'Markazi Text', serif;
 
 }
 
@@ -88,6 +98,22 @@ main {
   grid-area: contact;
 }
 
+
+.text-reveal {
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  transition: all 0.5s ease-in-out 1s;
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  p {
+    font-size: 2rem;
+  }
+  
+}
 
 // Media Queries
 
