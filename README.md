@@ -6,7 +6,7 @@ Avante takes a minimalist, flat design approach to the modern portfolio site.
 
 ### Version
 
-0.0.3
+0.0.4
 
 ## Install Dependencies
 
@@ -54,6 +54,10 @@ gulp clean:dist
 
 
 #### Change Log
+
+###### 0.0.3
+
+* Text for sections that reveals on delayed hover
 
 ###### 0.0.3
 
