@@ -29,7 +29,11 @@ section {
   }
 
   &:hover {
-    filter: hue-rotate(30deg);
+    filter: hue-rotate(60deg);
+    
+    i {
+      opacity: 0.2;
+    }
 
     img {
       opacity: 0.5;
@@ -69,32 +73,32 @@ main {
 }
 
 #brand {
-  background: #B10F2E;
+  background: #d50000;
   grid-area: brand;
 }
 
 #about {
-  background: #A18276;
+  background: #9b0000;
   grid-area: about;
 }
 
 #services {
-  background: #D8C99B;
+  background: #ff5131;
   grid-area: services;
 }
 
 #work {
-  background: #A18276 no-repeat center center;
+  background: #80e27e no-repeat center center;
   grid-area: work;
 }
 
 #blog {
-  background: #D8C99B no-repeat center center;
+  background: #087f23 no-repeat center center;
   grid-area: blog;
 }
 
 #contact {
-  background: #5C7457;
+  background: #4caf50;
   grid-area: contact;
 }
 
@@ -104,6 +108,10 @@ main {
   position: absolute;
   top: 100%;
   transition: all 0.5s ease-in-out 1s;
+  
+  h1, p {
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0,0,0,1);
+  }
   
   h1 {
     font-size: 3rem;
