@@ -23,14 +23,15 @@ section {
     transition: all 1s ease-in-out;
     width: 100%; }
   section:hover {
-    filter: hue-rotate(60deg); }
+    filter: grayscale(80%); }
     section:hover i {
       opacity: 0.2; }
     section:hover img {
-      opacity: 0.5; }
+      opacity: 0.8;
+      filter: blur(0.125rem); }
     section:hover .text-reveal {
       opacity: 1;
-      top: 1rem; }
+      top: 20%; }
 
 p {
   font-family: 'Markazi Text', serif; }
@@ -79,9 +80,9 @@ main {
   .text-reveal h1, .text-reveal p {
     text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5); }
   .text-reveal h1 {
-    font-size: 3rem; }
-  .text-reveal p {
     font-size: 2rem; }
+  .text-reveal p {
+    font-size: 1.33rem; }
 
 @media (min-width: 768px) {
   header, main {
@@ -92,4 +93,8 @@ main {
   header {
     grid-template-areas: 'brand brand brand brand services services about about' 'brand brand brand brand services services about about'; }
   main {
-    grid-template-areas: 'work work work work contact contact contact contact' 'blog blog blog blog contact contact contact contact'; } }
+    grid-template-areas: 'work work work work contact contact contact contact' 'blog blog blog blog contact contact contact contact'; }
+  .text-reveal h1 {
+    font-size: 3rem; }
+  .text-reveal p {
+    font-size: 2rem; } }

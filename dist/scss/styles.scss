@@ -29,10 +29,14 @@ section {
 
   &:hover {
     filter:grayscale(80%);
-    opacity: 0.8;
     
     i {
       opacity: 0.2;
+    }
+
+    img {
+      opacity: 0.8;
+      filter: blur(0.125rem);
     }
     
     .text-reveal {
