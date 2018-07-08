@@ -16,19 +16,21 @@ section {
   justify-content: center;
   position: relative;
   transition: filter 0.5s ease-in-out; }
+  section i.fa-5x {
+    font-size: 3rem; }
   section img {
     max-height: 100%;
     opacity: 0;
     position: absolute;
     transition: all 1s ease-in-out;
     width: 100%; }
+    section img:hover {
+      filter: grayscale(80%);
+      opacity: 1; }
   section:hover {
-    filter: grayscale(80%); }
+    opacity: 0.8; }
     section:hover i {
       opacity: 0.2; }
-    section:hover img {
-      opacity: 0.8;
-      filter: blur(0.125rem); }
     section:hover .text-reveal {
       opacity: 1;
       top: 20%; }
@@ -73,8 +75,10 @@ main {
   grid-area: contact; }
 
 .text-reveal {
+  max-width: 90%;
   opacity: 0;
   position: absolute;
+  text-align: center;
   top: 100%;
   transition: all 0.5s ease-in-out 0.3s; }
   .text-reveal h1, .text-reveal p {
@@ -94,6 +98,8 @@ main {
     grid-template-areas: 'brand brand brand brand services services about about' 'brand brand brand brand services services about about'; }
   main {
     grid-template-areas: 'work work work work contact contact contact contact' 'blog blog blog blog contact contact contact contact'; }
+  section i.fa-5x {
+    font-size: 5rem; }
   .text-reveal h1 {
     font-size: 3rem; }
   .text-reveal p {

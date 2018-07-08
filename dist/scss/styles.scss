@@ -18,6 +18,10 @@ section {
   justify-content: center;
   position: relative;
   transition: filter 0.5s ease-in-out;
+  
+  i.fa-5x {
+    font-size: 3rem;
+  }
 
   img {
     max-height: 100%;
@@ -25,18 +29,19 @@ section {
     position: absolute;
     transition: all 1s ease-in-out;
     width: 100%;
+    
+    &:hover {
+      filter:grayscale(80%);
+      opacity: 1;
+    }
+    
   }
 
   &:hover {
-    filter:grayscale(80%);
+    opacity: 0.8;
     
     i {
       opacity: 0.2;
-    }
-
-    img {
-      opacity: 0.8;
-      filter: blur(0.125rem);
     }
     
     .text-reveal {
@@ -104,8 +109,10 @@ main {
 
 
 .text-reveal {
+  max-width: 90%;
   opacity: 0;
   position: absolute;
+  text-align: center;
   top: 100%;
   transition: all 0.5s ease-in-out 0.3s;
   
@@ -144,6 +151,14 @@ main {
     grid-template-areas: 'work work work work contact contact contact contact'
                          'blog blog blog blog contact contact contact contact'
                          ;
+  }
+  
+  section {
+    
+    i.fa-5x {
+      font-size: 5rem;
+    }
+    
   }
   
   .text-reveal {
