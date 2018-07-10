@@ -27,6 +27,19 @@ html, body {
     #brand img:hover, #about img:hover, #services img:hover, #contact img:hover, #work img:hover, #blog img:hover {
       filter: grayscale(80%);
       opacity: 1; }
+  #brand .text-reveal, #about .text-reveal, #services .text-reveal, #contact .text-reveal, #work .text-reveal, #blog .text-reveal {
+    max-width: 90%;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    transition: all 0.5s ease-in-out 0.3s; }
+    #brand .text-reveal h1, #brand .text-reveal p, #about .text-reveal h1, #about .text-reveal p, #services .text-reveal h1, #services .text-reveal p, #contact .text-reveal h1, #contact .text-reveal p, #work .text-reveal h1, #work .text-reveal p, #blog .text-reveal h1, #blog .text-reveal p {
+      text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5); }
+    #brand .text-reveal h1, #about .text-reveal h1, #services .text-reveal h1, #contact .text-reveal h1, #work .text-reveal h1, #blog .text-reveal h1 {
+      font-size: 2rem; }
+    #brand .text-reveal p, #about .text-reveal p, #services .text-reveal p, #contact .text-reveal p, #work .text-reveal p, #blog .text-reveal p {
+      font-size: 1.33rem; }
   #brand:hover, #about:hover, #services:hover, #contact:hover, #work:hover, #blog:hover {
     opacity: 0.8; }
     #brand:hover i, #about:hover i, #services:hover i, #contact:hover i, #work:hover i, #blog:hover i {
@@ -53,27 +66,47 @@ section#portfolio {
   grid-template-areas: 'item-1 item-2' 'item-3 item-4' 'item-5 item-6' 'item-7 item-8' 'item-9 .'; }
   section#portfolio img {
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s all ease-in-out 0.5s; }
   section#portfolio #item-1, section#portfolio #item-2, section#portfolio #item-3, section#portfolio #item-4, section#portfolio #item-5, section#portfolio #item-6, section#portfolio #item-7, section#portfolio #item-8, section#portfolio #item-9 {
-    margin: 0;
-    padding: 0; }
+    position: relative;
+    text-align: center; }
+    section#portfolio #item-1:hover img, section#portfolio #item-2:hover img, section#portfolio #item-3:hover img, section#portfolio #item-4:hover img, section#portfolio #item-5:hover img, section#portfolio #item-6:hover img, section#portfolio #item-7:hover img, section#portfolio #item-8:hover img, section#portfolio #item-9:hover img {
+      opacity: 1; }
+    section#portfolio #item-1:hover i, section#portfolio #item-2:hover i, section#portfolio #item-3:hover i, section#portfolio #item-4:hover i, section#portfolio #item-5:hover i, section#portfolio #item-6:hover i, section#portfolio #item-7:hover i, section#portfolio #item-8:hover i, section#portfolio #item-9:hover i {
+      opacity: 0.5; }
+    section#portfolio #item-1 i, section#portfolio #item-2 i, section#portfolio #item-3 i, section#portfolio #item-4 i, section#portfolio #item-5 i, section#portfolio #item-6 i, section#portfolio #item-7 i, section#portfolio #item-8 i, section#portfolio #item-9 i {
+      font-size: 3rem;
+      position: relative;
+      top: 40%;
+      transition: 0.3s all ease-in-out 0.5s; }
   section#portfolio #item-1 {
+    background: #6fbf72;
     grid-area: item-1; }
   section#portfolio #item-2 {
+    background: #5DB761;
     grid-area: item-2; }
   section#portfolio #item-3 {
+    background: #4CAF50;
     grid-area: item-3; }
   section#portfolio #item-4 {
+    background: #449D48;
     grid-area: item-4; }
   section#portfolio #item-5 {
+    background: #3C8C40;
     grid-area: item-5; }
   section#portfolio #item-6 {
+    background: #357A38;
     grid-area: item-6; }
   section#portfolio #item-7 {
+    background: #2D6930;
     grid-area: item-7; }
   section#portfolio #item-8 {
+    background: #265728;
     grid-area: item-8; }
   section#portfolio #item-9 {
+    background: #1E4620;
     grid-area: item-9; }
 
 header {
@@ -105,20 +138,6 @@ main {
 #contact {
   background: #009688;
   grid-area: contact; }
-
-.text-reveal {
-  max-width: 90%;
-  opacity: 0;
-  position: absolute;
-  text-align: center;
-  top: 100%;
-  transition: all 0.5s ease-in-out 0.3s; }
-  .text-reveal h1, .text-reveal p {
-    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5); }
-  .text-reveal h1 {
-    font-size: 2rem; }
-  .text-reveal p {
-    font-size: 1.33rem; }
 
 @media (min-width: 768px) {
   header, main {
