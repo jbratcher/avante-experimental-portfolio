@@ -67,20 +67,13 @@ section#portfolio {
   section#portfolio img {
     height: 100%;
     width: 100%;
-    opacity: 0;
+    opacity: 0.1;
     transition: 0.3s all ease-in-out 0.5s; }
   section#portfolio #item-1, section#portfolio #item-2, section#portfolio #item-3, section#portfolio #item-4, section#portfolio #item-5, section#portfolio #item-6, section#portfolio #item-7, section#portfolio #item-8, section#portfolio #item-9 {
     position: relative;
     text-align: center; }
     section#portfolio #item-1:hover img, section#portfolio #item-2:hover img, section#portfolio #item-3:hover img, section#portfolio #item-4:hover img, section#portfolio #item-5:hover img, section#portfolio #item-6:hover img, section#portfolio #item-7:hover img, section#portfolio #item-8:hover img, section#portfolio #item-9:hover img {
       opacity: 1; }
-    section#portfolio #item-1:hover i, section#portfolio #item-2:hover i, section#portfolio #item-3:hover i, section#portfolio #item-4:hover i, section#portfolio #item-5:hover i, section#portfolio #item-6:hover i, section#portfolio #item-7:hover i, section#portfolio #item-8:hover i, section#portfolio #item-9:hover i {
-      opacity: 0.5; }
-    section#portfolio #item-1 i, section#portfolio #item-2 i, section#portfolio #item-3 i, section#portfolio #item-4 i, section#portfolio #item-5 i, section#portfolio #item-6 i, section#portfolio #item-7 i, section#portfolio #item-8 i, section#portfolio #item-9 i {
-      font-size: 3rem;
-      position: relative;
-      top: 40%;
-      transition: 0.3s all ease-in-out 0.5s; }
   section#portfolio #item-1 {
     background: #6fbf72;
     grid-area: item-1; }
