@@ -97,7 +97,8 @@ section#portfolio {
                        'item-3 item-4'
                        'item-5 item-6'
                        'item-7 item-8'
-                       'item-9 .'
+                       'item-9 item-10'
+                       'item-11 item-12'
   ;
   
   img {
@@ -168,6 +169,21 @@ section#portfolio {
     grid-area: item-9;
   }
   
+  #item-10 {
+    background: #1B3F1C;
+    grid-area: item-10;
+  }
+  
+  #item-11 {
+    background: #183819;
+    grid-area: item-11;
+  }
+  
+  #item-12 {
+    background: #153116;
+    grid-area: item-12;
+  }
+  
 }
 
 header {
@@ -212,6 +228,15 @@ main {
   grid-area: contact;
 }
 
+footer {
+  background: #009688;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
 // Media Queries
 
 @media (min-width: 768px) {
@@ -242,6 +267,7 @@ main {
     grid-template-areas: 'item-1 item-2 item-3'
                          'item-4 item-5 item-6'
                          'item-7 item-8 item-9'
+                         'item-10 item-11 item-12'
     ;
   }
   
