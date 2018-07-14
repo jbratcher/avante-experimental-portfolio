@@ -69,10 +69,10 @@ section#portfolio {
     width: 100%;
     opacity: 0.1;
     transition: 0.3s all ease-in-out 0.5s; }
-  section#portfolio #item-1, section#portfolio #item-2, section#portfolio #item-3, section#portfolio #item-4, section#portfolio #item-5, section#portfolio #item-6, section#portfolio #item-7, section#portfolio #item-8, section#portfolio #item-9 {
+  section#portfolio section {
     position: relative;
     text-align: center; }
-    section#portfolio #item-1:hover img, section#portfolio #item-2:hover img, section#portfolio #item-3:hover img, section#portfolio #item-4:hover img, section#portfolio #item-5:hover img, section#portfolio #item-6:hover img, section#portfolio #item-7:hover img, section#portfolio #item-8:hover img, section#portfolio #item-9:hover img {
+    section#portfolio section:hover img {
       opacity: 1; }
   section#portfolio #item-1 {
     background: #6fbf72;
@@ -146,7 +146,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 2rem;
   padding: 1rem 0; }
 
 @media (min-width: 768px) {
@@ -169,4 +168,7 @@ footer {
   .text-reveal h1 {
     font-size: 3rem; }
   .text-reveal p {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  footer {
+    font-size: 2rem;
+    padding: 1rem 0; } }

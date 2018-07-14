@@ -108,7 +108,7 @@ section#portfolio {
     transition: 0.3s all ease-in-out 0.5s;
   }
   
-  #item-1, #item-2, #item-3, #item-4, #item-5, #item-6, #item-7, #item-8, #item-9 {
+  section {
     
     position: relative;
     text-align: center;
@@ -233,7 +233,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 2rem;
   padding: 1rem 0;
 }
 
@@ -289,6 +288,11 @@ footer {
       font-size: 2rem;
     }
     
+  }
+  
+  footer {
+    font-size: 2rem;
+    padding: 1rem 0;
   }
 
 }
